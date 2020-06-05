@@ -1,0 +1,40 @@
+#include<iostream.h>
+#include<conio.h>
+
+class A
+{
+
+
+ public:
+
+  A()
+  {
+   cout<<"Constructer called\n";
+  }
+
+  ~A()
+  {
+    cout<<"Destructer called\n";
+  }
+  void fun1()
+  {
+    cout<<"fun1 called\n";
+  }
+  void fun2()
+  {
+   cout<<"fun2 called\n";
+  }
+};
+
+void main()
+{
+ clrscr();
+ A *p;
+ p=new A();
+ p->fun1();
+ p->fun2();
+
+ delete p;
+
+ getch();
+}
